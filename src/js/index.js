@@ -1,0 +1,5 @@
+import $ from 'jquery'
+import popper from 'popper.js'
+import 'bootstrap'
+import 'slick-carousel'
+import '../scss/index.scss'

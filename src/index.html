@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lasles</title>
+</head>
+
+<body>
+    <div class="container container-resize">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">
+                <img class="navbar-brand__img" src="img/Logo.png" alt="Logo">
+            </a>
+
+            <button class="hamburger hamburger--collapse" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto navbar-nav-menu">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><span data-content="About">About</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span data-content="Features">Features</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span data-content="Pricing">Pricing</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span data-content="Testimonials">Testimonials</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span data-content="Help">Help</span></a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mr-auto navbar-nav-auth">
+                    <li class="nav-item active">
+                        <a class="nav-link nav-link-in" href="#">Sign In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-up" href="#">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <script>
+        var hamburgers = document.querySelectorAll(".hamburger");
+        if (hamburgers.length > 0) {
+            hamburgers.forEach(function (hamburger) {
+                hamburger.addEventListener("click", function () {
+                    this.classList.toggle("is-active");
+                }, false);
+            });
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+@media (min-width: 319px) and (max-width: 991.98px) {
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: $orange;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .navbar-expand-lg .navbar-nav {
+
+        & .nav-link {
+            color: #fff;
+
+            & span {
+                color: #fff;
+
+                &::before {
+                    color: #fff;
+                    text-decoration-color: #fff;
+                }
+            }
+        }
+
+        & .nav-link-up {
+            border: 1px solid #fff;
+            width: 152px;
+            margin-left: 20px;
+        }
+
+    }
+
+    .navbar-nav-menu {
+        margin-top: 40px;
+    }
+
+    .navbar-nav-auth {
+        margin-top: 20px;
+        padding-left: 40px;
+    }
+}
+@media (min-width: 319px) and (max-width: 767.98px) {  
+    body {
+        padding: 0 15px;
+    }
+
+    .container-resize {
+        max-width: 100%;
+        padding-top: 10px;
+    }
+    
+    .navbar-nav-auth {
+        padding-left: 30px;
+    }
+
+    .navbar-nav-menu {
+        padding-left: 30px;
+    }
+}
+ 
+@media (min-width: 768px) and (max-width: 991.98px) {  
+    .container-resize {
+        padding-top: 15px;
+    }
+
+    .navbar-nav-auth {
+        padding-left: 40px;
+    }
+    
+    .navbar-nav-menu {
+        padding-left: 40px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .navbar-nav-menu {
+        padding-left: 22px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1439.98px){  
+}
+
+@media (min-width: 1440px) {
+}
+
+@media (min-width: 1441px) {
+}

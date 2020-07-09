@@ -1,0 +1,101 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    ;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.hamburger {
+    position: absolute;
+    z-index: 999;
+    right: 0;
+    display: none;
+}
+
+.hamburger-inner, 
+.hamburger-inner::before, 
+.hamburger-inner::after {
+    height: 2px;
+    transition: all 0.7s;
+}
+
+.hamburger.is-active .hamburger-inner, 
+.hamburger.is-active .hamburger-inner::before, 
+.hamburger.is-active .hamburger-inner::after {
+    background-color: #fff;
+}
+
+.container-resize {
+    padding-top: 37px;
+}
+
+.container-resize,
+.navbar {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar-brand {
+    &__img {
+        width: 149px;
+    }
+}
+
+.navbar-expand-lg .navbar-nav {
+
+    & .nav-link {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 16px;
+        color: $link-color;
+
+        position: relative;
+        transition: clip-path 275ms ease;
+
+        &:hover span::before,
+        &:focus span::before {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+
+        & span {
+            position: relative;
+            display: inline-block;
+            color: $link-color;
+
+            &::before {
+                position: absolute;
+                content: attr(data-content);
+                color: $orange;
+                text-decoration: underline;
+                text-decoration-color: $orange;
+                clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+                transition: clip-path 275ms ease;
+            }
+        }
+    }
+
+    & .nav-link-in {
+        color: #0B132A;
+        font-weight: 500;
+        padding-top: 11px;
+        padding-right: 29px;
+    }
+
+    & .nav-link-up {
+        font-weight: 500;
+        color: #F53855;
+        border: 1px solid #F53855;
+        padding: 10px 45px;
+        border-radius: 50px;
+    }
+
+}
+
+.navbar-nav-menu {
+    padding-left: 122px;
+}
+
+.navbar-nav-auth {
+    padding-left: 20px;
+    margin-right: 0 !important;
+}
